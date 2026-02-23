@@ -1,0 +1,1426 @@
+[2026-02-14T09:46:06.694+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-14T09:46:06.730+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-14T09:46:06.744+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-14T09:46:06.745+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-14T09:46:06.763+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-14T09:46:06.775+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1118) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-14T09:46:06.777+0000] {standard_task_runner.py:64} INFO - Started process 1136 to run task
+[2026-02-14T09:46:06.775+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '225', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpm7ro1dy0']
+[2026-02-14T09:46:06.779+0000] {standard_task_runner.py:91} INFO - Job 225: Subtask task_TSLA
+[2026-02-14T09:46:06.836+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host 78a955e87025
+[2026-02-14T09:46:06.944+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-14T09:46:06.947+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-14T09:46:06.964+0000] {logging_mixin.py:188} INFO - 2025-12-31 2026-01-02
+[2026-02-14T09:46:06.967+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:10 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-14T09:46:06.978+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-14T09:46:07.682+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-14T09:46:07.697+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-14T09:46:07.698+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-14T09:46:07.710+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260214T094606, end_date=20260214T094607
+[2026-02-14T09:46:07.756+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-14T09:46:07.780+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-14T09:46:07.782+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-18T06:51:48.742+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-18T06:51:48.773+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-18T06:51:48.783+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-18T06:51:48.784+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-18T06:51:48.802+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-18T06:51:48.815+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=228) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-18T06:51:48.817+0000] {standard_task_runner.py:64} INFO - Started process 247 to run task
+[2026-02-18T06:51:48.815+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '246', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmp_i6_6_lo']
+[2026-02-18T06:51:48.820+0000] {standard_task_runner.py:91} INFO - Job 246: Subtask task_TSLA
+[2026-02-18T06:51:48.881+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-18T06:51:48.986+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-18T06:51:48.987+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-18T06:51:49.001+0000] {manager.py:8} INFO - log
+[2026-02-18T06:51:49.003+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-18T06:51:49.806+0000] {base.py:191} ERROR - Failed to get ticker 'TSLA' reason: UNIQUE constraint failed: _cookieschema.strategy
+[2026-02-18T06:51:50.803+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/quote.py:700 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-18T06:51:50.805+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/quote.py:702 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-18T06:51:51.026+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-18T06:51:51.184+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-18T06:51:51.190+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-18T06:51:51.191+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stocks/scripts/manager.py", line 10, in fetch_data
+    return data.to_json(f"{stock}_{data_interval_start.strftime('%Y-%m-%d')}.json")
+           ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'to_json'
+[2026-02-18T06:51:51.199+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260218T065148, end_date=20260218T065151
+[2026-02-18T06:51:51.207+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 246 for task task_TSLA ('NoneType' object has no attribute 'to_json'; 247)
+[2026-02-18T06:51:51.245+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-18T06:51:51.252+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-18T06:55:55.650+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-18T06:55:55.693+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-18T06:55:55.704+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-18T06:55:55.705+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-18T06:55:55.725+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-18T06:55:55.739+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=367) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-18T06:55:55.741+0000] {standard_task_runner.py:64} INFO - Started process 383 to run task
+[2026-02-18T06:55:55.740+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '253', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpxhflmgmw']
+[2026-02-18T06:55:55.744+0000] {standard_task_runner.py:91} INFO - Job 253: Subtask task_TSLA
+[2026-02-18T06:55:55.813+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-18T06:55:55.948+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-18T06:55:55.951+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-18T06:55:55.970+0000] {manager.py:8} INFO - log
+[2026-02-18T06:55:55.974+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-18T06:55:55.990+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-18T06:55:57.014+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-18T06:55:57.024+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-18T06:55:57.025+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stocks/scripts/manager.py", line 10, in fetch_data
+    logging.log(data)
+TypeError: log() missing 1 required positional argument: 'msg'
+[2026-02-18T06:55:57.038+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260218T065555, end_date=20260218T065557
+[2026-02-18T06:55:57.052+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 253 for task task_TSLA (log() missing 1 required positional argument: 'msg'; 383)
+[2026-02-18T06:55:57.062+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-18T06:55:57.079+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-18T06:55:57.082+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-18T06:59:01.981+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-18T06:59:02.018+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-18T06:59:02.030+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-18T06:59:02.031+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-18T06:59:02.048+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-18T06:59:02.059+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=474) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-18T06:59:02.061+0000] {standard_task_runner.py:64} INFO - Started process 492 to run task
+[2026-02-18T06:59:02.059+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '263', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmp21gvhdt4']
+[2026-02-18T06:59:02.063+0000] {standard_task_runner.py:91} INFO - Job 263: Subtask task_TSLA
+[2026-02-18T06:59:02.125+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-18T06:59:02.240+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-18T06:59:02.244+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-18T06:59:02.260+0000] {manager.py:8} INFO - log
+[2026-02-18T06:59:02.264+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-18T06:59:02.277+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-18T06:59:01.150+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-18T06:59:01.159+0000] {manager.py:10} INFO - None
+[2026-02-18T06:59:01.159+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-18T06:59:01.160+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stocks/scripts/manager.py", line 11, in fetch_data
+    return data.to_json(f"{stock}_{data_interval_start.strftime('%Y-%m-%d')}.json")
+           ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'to_json'
+[2026-02-18T06:59:01.170+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260218T065902, end_date=20260218T065901
+[2026-02-18T06:59:01.180+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 263 for task task_TSLA ('NoneType' object has no attribute 'to_json'; 492)
+[2026-02-18T06:59:01.190+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-18T06:59:01.207+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-18T06:59:01.210+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-18T07:12:44.094+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-18T07:12:44.133+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-18T07:12:44.144+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-18T07:12:44.145+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-18T07:12:44.168+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-18T07:12:44.187+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1272) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-18T07:12:44.191+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '376', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpmryx6v_3']
+[2026-02-18T07:12:44.205+0000] {standard_task_runner.py:91} INFO - Job 376: Subtask task_TSLA
+[2026-02-18T07:12:44.204+0000] {standard_task_runner.py:64} INFO - Started process 1302 to run task
+[2026-02-18T07:12:44.324+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-18T07:12:44.502+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-18T07:12:44.505+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-18T07:12:44.527+0000] {manager.py:8} INFO - log
+[2026-02-18T07:12:44.536+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-18T07:12:44.554+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-18T07:12:45.325+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-18T07:12:45.336+0000] {manager.py:10} INFO - Empty DataFrame
+Columns: [(Close, TSLA), (High, TSLA), (Low, TSLA), (Open, TSLA), (Volume, TSLA)]
+Index: []
+[2026-02-18T07:12:45.346+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-18T07:12:45.347+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-18T07:12:45.356+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260218T071244, end_date=20260218T071245
+[2026-02-18T07:12:45.407+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-18T07:12:45.429+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-18T07:12:45.431+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T12:59:16.106+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T12:59:16.155+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T12:59:16.175+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T12:59:16.175+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T12:59:16.216+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T12:59:16.235+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '836', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpavlf_41g']
+[2026-02-19T12:59:16.245+0000] {standard_task_runner.py:91} INFO - Job 836: Subtask task_TSLA
+[2026-02-19T12:59:16.249+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=27765) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T12:59:16.257+0000] {standard_task_runner.py:64} INFO - Started process 27797 to run task
+[2026-02-19T12:59:16.346+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T12:59:16.528+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T12:59:16.531+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T12:59:16.553+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:10 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T12:59:16.576+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T12:59:17.282+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T12:59:17.301+0000] {api.py:11} INFO - Выгрузилось
+    __________________________
+    Price            Close        High         Low        Open    Volume
+Ticker            TSLA        TSLA        TSLA        TSLA      TSLA
+Date                                                                
+2025-12-31  449.720001  456.549988  449.299988  456.100006  49078000
+    __________________________
+    
+[2026-02-19T12:59:17.302+0000] {api.py:17} INFO - start=2025-12-31, end=2026-01-02
+[2026-02-19T12:59:17.304+0000] {api.py:18} INFO - После удаления
+    __________________________
+    Empty DataFrame
+Columns: [(Close, TSLA), (High, TSLA), (Low, TSLA), (Open, TSLA), (Volume, TSLA)]
+Index: []
+    __________________________
+    
+[2026-02-19T12:59:17.318+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T12:59:17.319+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T12:59:17.323+0000] {sql.py:908} INFO - Done loading. Loaded a total of 0 rows into stocks
+[2026-02-19T12:59:17.330+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T12:59:17.331+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T12:59:17.340+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T125916, end_date=20260219T125917
+[2026-02-19T12:59:17.370+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T12:59:17.392+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T12:59:17.394+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T13:03:39.130+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T13:03:39.230+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T13:03:39.254+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T13:03:39.257+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T13:03:39.314+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T13:03:39.331+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=28071) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T13:03:39.334+0000] {standard_task_runner.py:64} INFO - Started process 28106 to run task
+[2026-02-19T13:03:39.343+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '889', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmp0je4y92j']
+[2026-02-19T13:03:39.347+0000] {standard_task_runner.py:91} INFO - Job 889: Subtask task_TSLA
+[2026-02-19T13:03:39.469+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T13:03:39.642+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T13:03:39.645+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T13:03:39.665+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:10 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T13:03:39.677+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T13:03:40.348+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T13:03:40.367+0000] {api.py:11} INFO - Выгрузилось
+    __________________________
+    Price            Close        High         Low        Open    Volume
+Ticker            TSLA        TSLA        TSLA        TSLA      TSLA
+Date                                                                
+2025-12-31  449.720001  456.549988  449.299988  456.100006  49078000
+    __________________________
+    
+[2026-02-19T13:03:40.368+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T13:03:40.368+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stocks/scripts/manager.py", line 11, in fetch_data
+    data = fetch_data_from_yfinance(stock, data_interval_start=data_interval_start, data_interval_end=data_interval_end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stocks/scripts/api.py", line 16, in fetch_data_from_yfinance
+    df.drop(index=start, inplace=True)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/frame.py", line 6288, in drop
+    return super().drop(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/generic.py", line 4644, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/generic.py", line 4686, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 7268, in drop
+    raise KeyError(f"{labels[mask].tolist()} not found in axis")
+KeyError: "[DateTime(2025, 12, 31, 0, 0, 0, tzinfo=Timezone('UTC'))] not found in axis"
+[2026-02-19T13:03:40.390+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T130339, end_date=20260219T130340
+[2026-02-19T13:03:40.403+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 889 for task task_TSLA ("[DateTime(2025, 12, 31, 0, 0, 0, tzinfo=Timezone('UTC'))] not found in axis"; 28106)
+[2026-02-19T13:03:40.443+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-19T13:03:40.462+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T13:03:40.464+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T13:07:22.976+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T13:07:23.019+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T13:07:23.053+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T13:07:23.054+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T13:07:23.090+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T13:07:23.105+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=28288) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T13:07:23.106+0000] {standard_task_runner.py:64} INFO - Started process 28325 to run task
+[2026-02-19T13:07:23.112+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '922', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpdy5vvux6']
+[2026-02-19T13:07:23.124+0000] {standard_task_runner.py:91} INFO - Job 922: Subtask task_TSLA
+[2026-02-19T13:07:23.240+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T13:07:23.431+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T13:07:23.437+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T13:07:23.465+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T13:07:23.488+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T13:07:24.826+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T13:07:24.852+0000] {api.py:10} INFO - Выгрузилось
+    __________________________
+    Price            Close        High         Low        Open    Volume
+Ticker            TSLA        TSLA        TSLA        TSLA      TSLA
+Date                                                                
+2025-12-31  449.720001  456.549988  449.299988  456.100006  49078000
+    __________________________
+    
+[2026-02-19T13:07:24.853+0000] {api.py:16} INFO - start=2025-12-31, end=2026-01-02
+[2026-02-19T13:07:24.856+0000] {api.py:17} INFO - После удаления
+    __________________________
+    Empty DataFrame
+Columns: [(Close, TSLA), (High, TSLA), (Low, TSLA), (Open, TSLA), (Volume, TSLA)]
+Index: []
+    __________________________
+    
+[2026-02-19T13:07:24.873+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T13:07:24.873+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T13:07:24.878+0000] {sql.py:908} INFO - Done loading. Loaded a total of 0 rows into stocks
+[2026-02-19T13:07:24.884+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T13:07:24.885+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T13:07:24.896+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T130723, end_date=20260219T130724
+[2026-02-19T13:07:24.970+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T13:07:25.000+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T13:07:25.005+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T14:09:22.882+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T14:09:22.933+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:09:22.945+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:09:22.946+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T14:09:22.962+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T14:09:22.978+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=29827) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T14:09:22.982+0000] {standard_task_runner.py:64} INFO - Started process 29864 to run task
+[2026-02-19T14:09:22.984+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '948', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpmwbeqt6k']
+[2026-02-19T14:09:22.988+0000] {standard_task_runner.py:91} INFO - Job 948: Subtask task_TSLA
+[2026-02-19T14:09:23.076+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T14:09:23.227+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T14:09:23.230+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T14:09:23.254+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T14:09:23.271+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T14:09:23.914+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T14:09:23.931+0000] {api.py:10} INFO - Выгрузилось
+    __________________________
+    Price            Close        High         Low        Open    Volume
+Ticker            TSLA        TSLA        TSLA        TSLA      TSLA
+Date                                                                
+2025-12-31  449.720001  456.549988  449.299988  456.100006  49078000
+    __________________________
+    
+[2026-02-19T14:09:23.933+0000] {api.py:16} INFO - start=2025-12-31, end=2026-01-02
+[2026-02-19T14:09:23.935+0000] {api.py:17} INFO - После удаления
+    __________________________
+    Empty DataFrame
+Columns: [(Close, TSLA), (High, TSLA), (Low, TSLA), (Open, TSLA), (Volume, TSLA)]
+Index: []
+    __________________________
+    
+[2026-02-19T14:09:23.946+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T14:09:23.947+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T14:09:23.952+0000] {sql.py:908} INFO - Done loading. Loaded a total of 0 rows into stocks
+[2026-02-19T14:09:23.959+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T14:09:23.959+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T14:09:23.969+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T140922, end_date=20260219T140923
+[2026-02-19T14:09:24.009+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T14:09:24.027+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T14:09:24.028+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T14:10:24.653+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T14:10:24.715+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:10:24.730+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:10:24.734+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T14:10:24.758+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T14:10:24.772+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=29997) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T14:10:24.774+0000] {standard_task_runner.py:64} INFO - Started process 30032 to run task
+[2026-02-19T14:10:24.773+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '983', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpe273315l']
+[2026-02-19T14:10:24.779+0000] {standard_task_runner.py:91} INFO - Job 983: Subtask task_TSLA
+[2026-02-19T14:10:24.888+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T14:10:25.031+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T14:10:25.033+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T14:10:25.054+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T14:10:25.069+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T14:10:26.009+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T14:10:26.036+0000] {api.py:10} INFO - Выгрузилось
+    __________________________
+    Price            Close        High         Low        Open    Volume
+Ticker            TSLA        TSLA        TSLA        TSLA      TSLA
+Date                                                                
+2025-12-31  449.720001  456.549988  449.299988  456.100006  49078000
+    __________________________
+    
+[2026-02-19T14:10:26.038+0000] {api.py:16} INFO - start=2025-12-31, end=2026-01-02
+[2026-02-19T14:10:26.041+0000] {api.py:17} INFO - После удаления
+    __________________________
+    Empty DataFrame
+Columns: [(Close, TSLA), (High, TSLA), (Low, TSLA), (Open, TSLA), (Volume, TSLA)]
+Index: []
+    __________________________
+    
+[2026-02-19T14:10:26.057+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T14:10:26.057+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T14:10:26.062+0000] {sql.py:908} INFO - Done loading. Loaded a total of 0 rows into stocks
+[2026-02-19T14:10:26.068+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T14:10:26.069+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T14:10:26.079+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T141024, end_date=20260219T141026
+[2026-02-19T14:10:26.122+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T14:10:26.153+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T14:10:26.159+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T14:13:30.675+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T14:13:30.752+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:13:30.772+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:13:30.773+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T14:13:30.796+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T14:13:30.819+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=30212) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T14:13:30.822+0000] {standard_task_runner.py:64} INFO - Started process 30243 to run task
+[2026-02-19T14:13:30.833+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1015', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpxtclzg8_']
+[2026-02-19T14:13:30.838+0000] {standard_task_runner.py:91} INFO - Job 1015: Subtask task_TSLA
+[2026-02-19T14:13:30.954+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T14:13:31.150+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T14:13:31.154+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T14:13:31.189+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T14:13:31.229+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T14:13:32.282+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T14:13:32.304+0000] {api.py:10} INFO - Выгрузилось
+    __________________________
+    Price            Close        High         Low        Open    Volume
+Ticker            TSLA        TSLA        TSLA        TSLA      TSLA
+Date                                                                
+2025-12-31  449.720001  456.549988  449.299988  456.100006  49078000
+    __________________________
+    
+[2026-02-19T14:13:32.306+0000] {api.py:16} INFO - start=2025-12-31, end=2026-01-02
+[2026-02-19T14:13:32.309+0000] {api.py:17} INFO - После удаления
+    __________________________
+    Empty DataFrame
+Columns: [(Close, TSLA), (High, TSLA), (Low, TSLA), (Open, TSLA), (Volume, TSLA)]
+Index: []
+    __________________________
+    
+[2026-02-19T14:13:32.323+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T14:13:32.324+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T14:13:32.327+0000] {sql.py:908} INFO - Done loading. Loaded a total of 0 rows into stocks
+[2026-02-19T14:13:32.333+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T14:13:32.334+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T14:13:32.343+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T141330, end_date=20260219T141332
+[2026-02-19T14:13:32.375+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T14:13:32.400+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T14:13:32.402+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T14:18:09.028+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T14:18:09.092+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:18:09.112+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:18:09.115+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T14:18:09.156+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T14:18:09.172+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=30472) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T14:18:09.174+0000] {standard_task_runner.py:64} INFO - Started process 30501 to run task
+[2026-02-19T14:18:09.183+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1051', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmp9_pwiwii']
+[2026-02-19T14:18:09.192+0000] {standard_task_runner.py:91} INFO - Job 1051: Subtask task_TSLA
+[2026-02-19T14:18:09.313+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T14:18:09.480+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T14:18:09.482+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T14:18:09.517+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T14:18:09.542+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T14:18:10.310+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T14:18:10.328+0000] {api.py:10} INFO - Выгрузилось
+    __________________________
+    Price            Close        High         Low        Open    Volume
+Ticker            TSLA        TSLA        TSLA        TSLA      TSLA
+Date                                                                
+2025-12-31  449.720001  456.549988  449.299988  456.100006  49078000
+    __________________________
+    
+[2026-02-19T14:18:10.330+0000] {api.py:16} INFO - start=2025-12-31, end=2026-01-02
+[2026-02-19T14:18:10.332+0000] {api.py:17} INFO - После удаления
+    __________________________
+    Empty DataFrame
+Columns: [(Close, TSLA), (High, TSLA), (Low, TSLA), (Open, TSLA), (Volume, TSLA)]
+Index: []
+    __________________________
+    
+[2026-02-19T14:18:10.350+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T14:18:10.354+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T14:18:10.358+0000] {sql.py:908} INFO - Done loading. Loaded a total of 0 rows into stocks
+[2026-02-19T14:18:10.363+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T14:18:10.364+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T14:18:10.372+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T141809, end_date=20260219T141810
+[2026-02-19T14:18:10.423+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T14:18:10.449+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T14:18:10.452+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T14:50:16.731+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T14:50:16.782+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:50:16.792+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:50:16.792+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T14:50:16.806+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T14:50:16.819+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=32374) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T14:50:16.824+0000] {standard_task_runner.py:64} INFO - Started process 32406 to run task
+[2026-02-19T14:50:16.825+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1340', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpclfl8x6a']
+[2026-02-19T14:50:16.832+0000] {standard_task_runner.py:91} INFO - Job 1340: Subtask task_TSLA
+[2026-02-19T14:50:16.934+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T14:50:17.085+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T14:50:17.089+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T14:50:17.108+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T14:50:17.131+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T14:50:18.070+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T14:50:18.091+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T14:50:18.092+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T14:50:18.099+0000] {sql.py:896} INFO - Loaded 1 rows into stocks so far
+[2026-02-19T14:50:18.100+0000] {sql.py:908} INFO - Done loading. Loaded a total of 1 rows into stocks
+[2026-02-19T14:50:18.106+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T14:50:18.107+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T14:50:18.120+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T145016, end_date=20260219T145018
+[2026-02-19T14:50:18.185+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T14:50:18.211+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T14:50:18.214+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T14:51:49.163+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T14:51:49.202+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:51:49.225+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:51:49.226+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T14:51:49.254+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T14:51:49.267+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=32998) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T14:51:49.270+0000] {standard_task_runner.py:64} INFO - Started process 33029 to run task
+[2026-02-19T14:51:49.277+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1486', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmppode3qo7']
+[2026-02-19T14:51:49.281+0000] {standard_task_runner.py:91} INFO - Job 1486: Subtask task_TSLA
+[2026-02-19T14:51:49.357+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T14:51:49.465+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T14:51:49.466+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T14:51:49.482+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T14:51:49.491+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T14:51:50.464+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T14:51:50.517+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T14:51:50.520+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T14:51:50.537+0000] {sql.py:896} INFO - Loaded 1 rows into stocks so far
+[2026-02-19T14:51:50.538+0000] {sql.py:908} INFO - Done loading. Loaded a total of 1 rows into stocks
+[2026-02-19T14:51:50.548+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T14:51:50.550+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T14:51:50.571+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T145149, end_date=20260219T145150
+[2026-02-19T14:51:50.658+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T14:51:50.689+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T14:51:50.735+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T14:52:34.572+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T14:52:34.612+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:52:34.623+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:52:34.624+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T14:52:34.667+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T14:52:34.684+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=33101) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T14:52:34.685+0000] {standard_task_runner.py:64} INFO - Started process 33119 to run task
+[2026-02-19T14:52:34.685+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1497', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmp_hiluyhp']
+[2026-02-19T14:52:34.689+0000] {standard_task_runner.py:91} INFO - Job 1497: Subtask task_TSLA
+[2026-02-19T14:52:34.752+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T14:52:34.846+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T14:52:34.847+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T14:52:34.865+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T14:52:34.877+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T14:52:35.586+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T14:52:35.612+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T14:52:35.613+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T14:52:35.620+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T14:52:35.620+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stocks/scripts/manager.py", line 24, in fetch_data
+    postgresHook.insert_rows(table="stocks", rows=rows,
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 893, in insert_rows
+    cur.executemany(sql, values)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "stocks_pkey"
+DETAIL:  Key (ticker, date)=(TSLA, 2025-12-31) already exists.
+
+[2026-02-19T14:52:35.638+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T145234, end_date=20260219T145235
+[2026-02-19T14:52:35.656+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1497 for task task_TSLA (duplicate key value violates unique constraint "stocks_pkey"
+DETAIL:  Key (ticker, date)=(TSLA, 2025-12-31) already exists.
+; 33119)
+[2026-02-19T14:52:35.705+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-19T14:52:35.735+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T14:52:35.742+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T14:55:58.551+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T14:55:58.597+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:55:58.609+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:55:58.610+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T14:55:58.683+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T14:55:58.698+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=33388) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T14:55:58.700+0000] {standard_task_runner.py:64} INFO - Started process 33406 to run task
+[2026-02-19T14:55:58.699+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1546', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpnfgj5tib']
+[2026-02-19T14:55:58.702+0000] {standard_task_runner.py:91} INFO - Job 1546: Subtask task_TSLA
+[2026-02-19T14:55:58.761+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T14:55:58.869+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T14:55:58.870+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T14:55:58.888+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T14:55:58.903+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T14:55:59.709+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T14:55:59.737+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T14:55:59.737+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T14:55:59.746+0000] {sql.py:896} INFO - Loaded 1 rows into stocks so far
+[2026-02-19T14:55:59.747+0000] {sql.py:908} INFO - Done loading. Loaded a total of 1 rows into stocks
+[2026-02-19T14:55:59.754+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T14:55:59.755+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T14:55:59.765+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T145558, end_date=20260219T145559
+[2026-02-19T14:55:59.805+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T14:55:59.820+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T14:57:30.323+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T14:57:30.357+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:57:30.367+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T14:57:30.367+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T14:57:30.448+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T14:57:30.464+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=33564) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T14:57:30.466+0000] {standard_task_runner.py:64} INFO - Started process 33583 to run task
+[2026-02-19T14:57:30.464+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1581', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpt37_13gc']
+[2026-02-19T14:57:30.466+0000] {standard_task_runner.py:91} INFO - Job 1581: Subtask task_TSLA
+[2026-02-19T14:57:30.525+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T14:57:30.635+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T14:57:30.639+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T14:57:30.662+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T14:57:30.681+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T14:57:31.693+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T14:57:31.717+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T14:57:31.718+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T14:57:31.726+0000] {sql.py:896} INFO - Loaded 1 rows into stocks so far
+[2026-02-19T14:57:31.726+0000] {sql.py:908} INFO - Done loading. Loaded a total of 1 rows into stocks
+[2026-02-19T14:57:31.734+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T14:57:31.735+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T14:57:31.745+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T145730, end_date=20260219T145731
+[2026-02-19T14:57:31.804+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T14:57:31.825+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T14:57:31.828+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T15:52:47.837+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T15:52:47.884+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T15:52:47.896+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T15:52:47.897+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T15:52:48.000+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T15:52:48.013+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=33992) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T15:52:48.015+0000] {standard_task_runner.py:64} INFO - Started process 34011 to run task
+[2026-02-19T15:52:48.014+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1616', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmp3fomcwj8']
+[2026-02-19T15:52:48.017+0000] {standard_task_runner.py:91} INFO - Job 1616: Subtask task_TSLA
+[2026-02-19T15:52:48.090+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T15:52:48.193+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T15:52:48.195+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T15:52:48.214+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T15:52:48.229+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T15:52:49.111+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T15:52:49.134+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T15:52:49.138+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stocks/scripts/manager.py", line 12, in fetch_data
+    data = data.loc[data_interval_start:data_interval_start]
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexing.py", line 1429, in _getitem_axis
+    return self._get_slice_axis(key, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexing.py", line 1461, in _get_slice_axis
+    indexer = labels.slice_indexer(slice_obj.start, slice_obj.stop, slice_obj.step)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/datetimes.py", line 1072, in slice_indexer
+    return Index.slice_indexer(self, start, end, step)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6804, in slice_indexer
+    start_slice, end_slice = self.slice_locs(start, end, step=step)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 7062, in slice_locs
+    start_slice = self.get_slice_bound(start, "left")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6964, in get_slice_bound
+    label = self._maybe_cast_slice_bound(label, side)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/datetimes.py", line 1033, in _maybe_cast_slice_bound
+    self._data._assert_tzawareness_compat(label)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/arrays/datetimes.py", line 796, in _assert_tzawareness_compat
+    raise TypeError(
+TypeError: Cannot compare tz-naive and tz-aware datetime-like objects.
+[2026-02-19T15:52:49.176+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T155247, end_date=20260219T155249
+[2026-02-19T15:52:49.207+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1616 for task task_TSLA (Cannot compare tz-naive and tz-aware datetime-like objects.; 34011)
+[2026-02-19T15:52:49.248+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-19T15:52:49.291+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T15:52:49.304+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T15:55:47.079+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T15:55:47.132+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T15:55:47.148+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T15:55:47.149+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T15:55:47.301+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T15:55:47.316+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=34204) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T15:55:47.318+0000] {standard_task_runner.py:64} INFO - Started process 34223 to run task
+[2026-02-19T15:55:47.319+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1651', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpaqx9x0ni']
+[2026-02-19T15:55:47.325+0000] {standard_task_runner.py:91} INFO - Job 1651: Subtask task_TSLA
+[2026-02-19T15:55:47.436+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T15:55:47.587+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T15:55:47.591+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T15:55:47.621+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T15:55:47.641+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T15:55:48.456+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T15:55:48.509+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T15:55:48.512+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T15:55:48.519+0000] {sql.py:908} INFO - Done loading. Loaded a total of 0 rows into stocks
+[2026-02-19T15:55:48.532+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T15:55:48.535+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T15:55:48.551+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T155547, end_date=20260219T155548
+[2026-02-19T15:55:48.627+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T15:55:48.671+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T15:55:48.673+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T16:05:51.574+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T16:05:51.619+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T16:05:51.634+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T16:05:51.635+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T16:05:51.685+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T16:05:51.700+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=34581) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T16:05:51.703+0000] {standard_task_runner.py:64} INFO - Started process 34599 to run task
+[2026-02-19T16:05:51.704+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1686', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpne9kv68b']
+[2026-02-19T16:05:51.711+0000] {standard_task_runner.py:91} INFO - Job 1686: Subtask task_TSLA
+[2026-02-19T16:05:51.848+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T16:05:52.009+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T16:05:52.015+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T16:05:52.039+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T16:05:52.133+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T16:05:53.082+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T16:05:53.155+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T16:05:53.158+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T16:05:53.180+0000] {sql.py:896} INFO - Loaded 1 rows into stocks so far
+[2026-02-19T16:05:53.182+0000] {sql.py:908} INFO - Done loading. Loaded a total of 1 rows into stocks
+[2026-02-19T16:05:53.203+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T16:05:53.208+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T16:05:53.226+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T160551, end_date=20260219T160553
+[2026-02-19T16:05:53.362+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T16:05:53.395+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T16:05:53.410+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T16:07:05.727+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T16:07:05.790+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T16:07:05.800+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T16:07:05.801+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T16:07:05.818+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T16:07:05.833+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=34757) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T16:07:05.832+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1721', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpg5l9qjyj']
+[2026-02-19T16:07:05.837+0000] {standard_task_runner.py:64} INFO - Started process 34773 to run task
+[2026-02-19T16:07:05.838+0000] {standard_task_runner.py:91} INFO - Job 1721: Subtask task_TSLA
+[2026-02-19T16:07:05.919+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T16:07:06.045+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T16:07:06.046+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T16:07:06.064+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T16:07:06.077+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T16:07:06.889+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T16:07:06.926+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T16:07:06.930+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T16:07:06.940+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T16:07:06.941+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stocks/scripts/manager.py", line 23, in fetch_data
+    postgresHook.insert_rows(table="stocks", rows=rows,
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 893, in insert_rows
+    cur.executemany(sql, values)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "stocks_pkey"
+DETAIL:  Key (ticker, date)=(TSLA, 2025-12-31) already exists.
+
+[2026-02-19T16:07:06.955+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T160705, end_date=20260219T160706
+[2026-02-19T16:07:07.109+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1721 for task task_TSLA (duplicate key value violates unique constraint "stocks_pkey"
+DETAIL:  Key (ticker, date)=(TSLA, 2025-12-31) already exists.
+; 34773)
+[2026-02-19T16:07:07.148+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-19T16:07:07.200+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T16:07:07.216+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T16:14:23.209+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T16:14:23.259+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T16:14:23.271+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T16:14:23.271+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T16:14:23.411+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T16:14:23.427+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=35071) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T16:14:23.429+0000] {standard_task_runner.py:64} INFO - Started process 35089 to run task
+[2026-02-19T16:14:23.426+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1756', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpgrulfy95']
+[2026-02-19T16:14:23.431+0000] {standard_task_runner.py:91} INFO - Job 1756: Subtask task_TSLA
+[2026-02-19T16:14:23.523+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T16:14:23.658+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T16:14:23.660+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T16:14:23.678+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T16:14:23.689+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T16:14:24.634+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T16:14:24.685+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T16:14:24.687+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T16:14:24.706+0000] {sql.py:896} INFO - Loaded 1 rows into stocks so far
+[2026-02-19T16:14:24.709+0000] {sql.py:908} INFO - Done loading. Loaded a total of 1 rows into stocks
+[2026-02-19T16:14:24.735+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T16:14:24.736+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T16:14:24.753+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T161423, end_date=20260219T161424
+[2026-02-19T16:14:24.903+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T16:14:24.954+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T16:14:24.960+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T16:17:15.833+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T16:17:15.860+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T16:17:15.867+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T16:17:15.868+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T16:17:15.877+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T16:17:15.886+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=35266) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T16:17:15.887+0000] {standard_task_runner.py:64} INFO - Started process 35268 to run task
+[2026-02-19T16:17:15.888+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1791', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpmc4h9hvk']
+[2026-02-19T16:17:15.892+0000] {standard_task_runner.py:91} INFO - Job 1791: Subtask task_TSLA
+[2026-02-19T16:17:15.932+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T16:17:15.999+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T16:17:16.000+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T16:17:16.010+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T16:17:16.016+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T16:17:16.728+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T16:17:16.747+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T16:17:16.747+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T16:17:16.751+0000] {manager.py:26} INFO - [['TSLA', Timestamp('2025-12-31 00:00:00'), 449.7200012207031, 456.54998779296875, 449.29998779296875, 456.1000061035156, 49078000]]
+[2026-02-19T16:17:16.755+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T16:17:16.756+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T16:17:16.763+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T161715, end_date=20260219T161716
+[2026-02-19T16:17:16.786+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T16:17:16.802+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T16:17:16.804+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T16:23:26.593+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T16:23:26.619+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T16:23:26.626+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T16:23:26.626+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T16:23:26.636+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T16:23:26.643+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=35555) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T16:23:26.644+0000] {standard_task_runner.py:64} INFO - Started process 35557 to run task
+[2026-02-19T16:23:26.644+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1826', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmptfwbgcl9']
+[2026-02-19T16:23:26.645+0000] {standard_task_runner.py:91} INFO - Job 1826: Subtask task_TSLA
+[2026-02-19T16:23:26.685+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T16:23:26.745+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T16:23:26.746+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T16:23:26.758+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T16:23:26.766+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T16:23:27.624+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T16:23:27.642+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T16:23:27.643+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T16:23:27.648+0000] {manager.py:28} INFO - [['TSLA', Timestamp('2025-12-31 00:00:00'), 449.7200012207031, 456.54998779296875, 449.29998779296875, 456.1000061035156, 49078000]]
+[2026-02-19T16:23:27.649+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T16:23:27.650+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/stocks/scripts/manager.py", line 25, in fetch_data
+    postgresHook.insert_rows(table="stocks", rows=rows,
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 893, in insert_rows
+    cur.executemany(sql, values)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "stocks_pkey"
+DETAIL:  Key (ticker, date)=(TSLA, 2025-12-31) already exists.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stocks/scripts/manager.py", line 29, in fetch_data
+    raise AirflowFailException("ошибка")
+airflow.exceptions.AirflowFailException: ошибка
+[2026-02-19T16:23:27.664+0000] {taskinstance.py:1206} INFO - Immediate failure requested. Marking task as FAILED. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T162326, end_date=20260219T162327
+[2026-02-19T16:23:27.685+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1826 for task task_TSLA (ошибка; 35557)
+[2026-02-19T16:23:27.701+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-19T16:23:27.720+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T16:23:27.724+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T16:26:01.070+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T16:26:01.095+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T16:26:01.103+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T16:26:01.103+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T16:26:01.113+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T16:26:01.123+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=35619) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T16:26:01.124+0000] {standard_task_runner.py:64} INFO - Started process 35621 to run task
+[2026-02-19T16:26:01.123+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1827', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpbrw1af6t']
+[2026-02-19T16:26:01.125+0000] {standard_task_runner.py:91} INFO - Job 1827: Subtask task_TSLA
+[2026-02-19T16:26:01.160+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T16:26:01.225+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T16:26:01.226+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T16:26:01.236+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T16:26:01.242+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T16:26:02.077+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T16:26:02.094+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-19T16:26:02.095+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-19T16:26:02.100+0000] {sql.py:896} INFO - Loaded 1 rows into stocks so far
+[2026-02-19T16:26:02.100+0000] {sql.py:908} INFO - Done loading. Loaded a total of 1 rows into stocks
+[2026-02-19T16:26:02.105+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T16:26:02.106+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T16:26:02.116+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T162601, end_date=20260219T162602
+[2026-02-19T16:26:02.139+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T16:26:02.152+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T16:26:02.153+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-19T16:31:53.341+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-19T16:31:53.369+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T16:31:53.376+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-19T16:31:53.376+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-19T16:31:53.387+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-19T16:31:53.399+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=35774) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-19T16:31:53.401+0000] {standard_task_runner.py:64} INFO - Started process 35776 to run task
+[2026-02-19T16:31:53.400+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1831', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpdfss3alf']
+[2026-02-19T16:31:53.402+0000] {standard_task_runner.py:91} INFO - Job 1831: Subtask task_TSLA
+[2026-02-19T16:31:53.441+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host cc036e7caf02
+[2026-02-19T16:31:53.507+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-19T16:31:53.508+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-19T16:31:53.519+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-19T16:31:53.525+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-19T16:31:54.180+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-19T16:31:54.194+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-19T16:31:54.195+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-19T16:31:54.202+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260219T163153, end_date=20260219T163154
+[2026-02-19T16:31:54.257+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-19T16:31:54.272+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-19T16:31:54.274+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-22T07:12:32.253+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-22T07:12:32.276+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-22T07:12:32.283+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-22T07:12:32.283+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-22T07:12:32.293+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-22T07:12:32.300+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=810) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-22T07:12:32.301+0000] {standard_task_runner.py:64} INFO - Started process 812 to run task
+[2026-02-22T07:12:32.300+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1872', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpojtrv6ez']
+[2026-02-22T07:12:32.302+0000] {standard_task_runner.py:91} INFO - Job 1872: Subtask task_TSLA
+[2026-02-22T07:12:32.343+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host c6ea4dedb566
+[2026-02-22T07:12:32.405+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-22T07:12:32.406+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-22T07:12:32.430+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-22T07:12:34.067+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-22T07:12:34.247+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-22T07:12:34.266+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-22T07:12:34.267+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-22T07:12:34.274+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260222T071232, end_date=20260222T071234
+[2026-02-22T07:12:34.304+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-22T07:12:34.316+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-22T07:12:34.318+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-23T03:25:36.288+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-23T03:25:36.316+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:25:36.322+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:25:36.322+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-23T03:25:36.332+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-23T03:25:36.338+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=293) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-23T03:25:36.339+0000] {standard_task_runner.py:64} INFO - Started process 295 to run task
+[2026-02-23T03:25:36.338+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1888', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmp4015ixn1']
+[2026-02-23T03:25:36.340+0000] {standard_task_runner.py:91} INFO - Job 1888: Subtask task_TSLA
+[2026-02-23T03:25:36.376+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host c6ea4dedb566
+[2026-02-23T03:25:36.437+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-23T03:25:36.438+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-23T03:25:36.450+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-23T03:25:36.460+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-23T03:26:06.427+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-23T03:26:06.428+0000] {multi.py:185} ERROR - 
+1 Failed download:
+[2026-02-23T03:26:06.428+0000] {multi.py:198} ERROR - ['TSLA']: Timeout('Failed to perform, curl: (28) Operation timed out after 30000 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+[2026-02-23T03:26:06.467+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-23T03:26:06.468+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-23T03:26:06.474+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260223T032536, end_date=20260223T032606
+[2026-02-23T03:26:06.562+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-23T03:26:06.576+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-23T03:26:06.578+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-23T03:30:14.186+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-23T03:30:14.232+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:30:14.245+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:30:14.246+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-23T03:30:14.268+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-23T03:30:14.282+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=467) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-23T03:30:14.285+0000] {standard_task_runner.py:64} INFO - Started process 485 to run task
+[2026-02-23T03:30:14.282+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1903', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpynqr5w8e']
+[2026-02-23T03:30:14.286+0000] {standard_task_runner.py:91} INFO - Job 1903: Subtask task_TSLA
+[2026-02-23T03:30:14.375+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host c6ea4dedb566
+[2026-02-23T03:30:14.477+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-23T03:30:14.480+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-23T03:30:14.498+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-23T03:30:14.517+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-23T03:30:15.223+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-23T03:30:15.238+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-23T03:30:15.239+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stocks/scripts/manager.py", line 16, in fetch_data
+    data = data.loc[data_interval_start:data_interval_start]
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexing.py", line 1429, in _getitem_axis
+    return self._get_slice_axis(key, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexing.py", line 1461, in _get_slice_axis
+    indexer = labels.slice_indexer(slice_obj.start, slice_obj.stop, slice_obj.step)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/datetimes.py", line 1072, in slice_indexer
+    return Index.slice_indexer(self, start, end, step)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6804, in slice_indexer
+    start_slice, end_slice = self.slice_locs(start, end, step=step)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 7062, in slice_locs
+    start_slice = self.get_slice_bound(start, "left")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6964, in get_slice_bound
+    label = self._maybe_cast_slice_bound(label, side)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/datetimes.py", line 1033, in _maybe_cast_slice_bound
+    self._data._assert_tzawareness_compat(label)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/arrays/datetimes.py", line 796, in _assert_tzawareness_compat
+    raise TypeError(
+TypeError: Cannot compare tz-naive and tz-aware datetime-like objects.
+[2026-02-23T03:30:15.261+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260223T033014, end_date=20260223T033015
+[2026-02-23T03:30:15.288+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1903 for task task_TSLA (Cannot compare tz-naive and tz-aware datetime-like objects.; 485)
+[2026-02-23T03:30:15.309+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-23T03:30:15.332+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-23T03:30:15.338+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-23T03:31:14.177+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-23T03:31:14.211+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:31:14.222+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:31:14.222+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-23T03:31:14.240+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-23T03:31:14.251+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=547) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-23T03:31:14.253+0000] {standard_task_runner.py:64} INFO - Started process 564 to run task
+[2026-02-23T03:31:14.252+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1917', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpb5oosgz_']
+[2026-02-23T03:31:14.255+0000] {standard_task_runner.py:91} INFO - Job 1917: Subtask task_TSLA
+[2026-02-23T03:31:14.315+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host c6ea4dedb566
+[2026-02-23T03:31:14.437+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-23T03:31:14.439+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-23T03:31:14.464+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-23T03:31:14.482+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-23T03:31:15.185+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-23T03:31:15.207+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-23T03:31:15.208+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-23T03:31:15.219+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260223T033114, end_date=20260223T033115
+[2026-02-23T03:31:15.323+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-23T03:31:15.337+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-23T03:31:46.284+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-23T03:31:46.332+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:31:46.344+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:31:46.344+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-23T03:31:46.393+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-23T03:31:46.406+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=615) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-23T03:31:46.409+0000] {standard_task_runner.py:64} INFO - Started process 633 to run task
+[2026-02-23T03:31:46.410+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1931', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpf2fxs8m_']
+[2026-02-23T03:31:46.418+0000] {standard_task_runner.py:91} INFO - Job 1931: Subtask task_TSLA
+[2026-02-23T03:31:46.491+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host c6ea4dedb566
+[2026-02-23T03:31:46.600+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-23T03:31:46.605+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-23T03:31:46.624+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-23T03:31:46.636+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-23T03:32:16.653+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-23T03:32:16.654+0000] {multi.py:185} ERROR - 
+1 Failed download:
+[2026-02-23T03:32:16.654+0000] {multi.py:198} ERROR - ['TSLA']: Timeout('Failed to perform, curl: (28) Connection timed out after 30002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+[2026-02-23T03:32:16.679+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-23T03:32:16.680+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-23T03:32:16.683+0000] {sql.py:908} INFO - Done loading. Loaded a total of 0 rows into stocks
+[2026-02-23T03:32:16.684+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-23T03:32:16.684+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stocks/scripts/manager.py", line 31, in fetch_data
+    raise AirflowFailException("ошибка")
+airflow.exceptions.AirflowFailException: ошибка
+[2026-02-23T03:32:16.695+0000] {taskinstance.py:1206} INFO - Immediate failure requested. Marking task as FAILED. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260223T033146, end_date=20260223T033216
+[2026-02-23T03:32:16.714+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1931 for task task_TSLA (ошибка; 633)
+[2026-02-23T03:32:16.725+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-23T03:32:16.732+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-23T03:33:48.933+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-23T03:33:48.972+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:33:48.982+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:33:48.983+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-23T03:33:49.000+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-23T03:33:49.015+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=719) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-23T03:33:49.014+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1945', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpn9_g8sq2']
+[2026-02-23T03:33:49.017+0000] {standard_task_runner.py:64} INFO - Started process 736 to run task
+[2026-02-23T03:33:49.017+0000] {standard_task_runner.py:91} INFO - Job 1945: Subtask task_TSLA
+[2026-02-23T03:33:49.084+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host c6ea4dedb566
+[2026-02-23T03:33:49.225+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-23T03:33:49.227+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-23T03:33:49.246+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-23T03:33:49.258+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-23T03:33:50.311+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-23T03:33:50.359+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-23T03:33:50.360+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-23T03:33:50.370+0000] {sql.py:908} INFO - Done loading. Loaded a total of 0 rows into stocks
+[2026-02-23T03:33:50.377+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-23T03:33:50.379+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-23T03:33:50.408+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260223T033348, end_date=20260223T033350
+[2026-02-23T03:33:50.568+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-23T03:33:50.597+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-23T03:33:50.600+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-23T03:51:41.534+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-23T03:51:41.578+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:51:41.589+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:51:41.590+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-23T03:51:41.606+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-23T03:51:41.620+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1311) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-23T03:51:41.621+0000] {standard_task_runner.py:64} INFO - Started process 1329 to run task
+[2026-02-23T03:51:41.625+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '1985', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmp2pdr89nz']
+[2026-02-23T03:51:41.631+0000] {standard_task_runner.py:91} INFO - Job 1985: Subtask task_TSLA
+[2026-02-23T03:51:41.705+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host c6ea4dedb566
+[2026-02-23T03:51:41.830+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-23T03:51:41.833+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-23T03:51:41.858+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-23T03:51:41.875+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-23T03:51:42.772+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-23T03:51:42.811+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-23T03:51:42.813+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-23T03:51:42.820+0000] {sql.py:908} INFO - Done loading. Loaded a total of 0 rows into stocks
+[2026-02-23T03:51:42.829+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-23T03:51:42.830+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-23T03:51:42.845+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260223T035141, end_date=20260223T035142
+[2026-02-23T03:51:42.966+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-23T03:51:42.987+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-23T03:53:11.672+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-23T03:53:11.694+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:53:11.700+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:53:11.701+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-23T03:53:11.715+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-23T03:53:11.722+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1525) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-23T03:53:11.723+0000] {standard_task_runner.py:64} INFO - Started process 1527 to run task
+[2026-02-23T03:53:11.722+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '2027', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpz5mbdmxd']
+[2026-02-23T03:53:11.724+0000] {standard_task_runner.py:91} INFO - Job 2027: Subtask task_TSLA
+[2026-02-23T03:53:11.757+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host c6ea4dedb566
+[2026-02-23T03:53:11.812+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-23T03:53:11.813+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-23T03:53:11.823+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-23T03:53:11.829+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-23T03:53:12.498+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-23T03:53:12.512+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-23T03:53:12.512+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-23T03:53:12.515+0000] {sql.py:908} INFO - Done loading. Loaded a total of 0 rows into stocks
+[2026-02-23T03:53:12.519+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-23T03:53:12.519+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-23T03:53:12.525+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260223T035311, end_date=20260223T035312
+[2026-02-23T03:53:12.539+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-23T03:53:12.551+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-23T03:53:12.552+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-23T03:54:37.041+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-23T03:54:37.062+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:54:37.067+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T03:54:37.067+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-23T03:54:37.075+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-23T03:54:37.082+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1613) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-23T03:54:37.083+0000] {standard_task_runner.py:64} INFO - Started process 1615 to run task
+[2026-02-23T03:54:37.081+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '2040', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmpcyn0lrt5']
+[2026-02-23T03:54:37.083+0000] {standard_task_runner.py:91} INFO - Job 2040: Subtask task_TSLA
+[2026-02-23T03:54:37.119+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host c6ea4dedb566
+[2026-02-23T03:54:37.171+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-23T03:54:37.172+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-23T03:54:37.181+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-23T03:54:37.187+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-23T03:54:37.905+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-23T03:54:37.920+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-23T03:54:37.920+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-23T03:54:37.923+0000] {sql.py:908} INFO - Done loading. Loaded a total of 0 rows into stocks
+[2026-02-23T03:54:37.927+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-23T03:54:37.927+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-23T03:54:37.933+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260223T035437, end_date=20260223T035437
+[2026-02-23T03:54:37.978+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-23T03:54:37.990+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-23T03:54:37.991+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-23T07:38:22.285+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-23T07:38:22.309+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T07:38:22.316+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T07:38:22.316+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-23T07:38:22.327+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-23T07:38:22.334+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=4147) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-23T07:38:22.335+0000] {standard_task_runner.py:64} INFO - Started process 4149 to run task
+[2026-02-23T07:38:22.334+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '2094', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmp3qmlplmm']
+[2026-02-23T07:38:22.336+0000] {standard_task_runner.py:91} INFO - Job 2094: Subtask task_TSLA
+[2026-02-23T07:38:22.375+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host 96304e009ded
+[2026-02-23T07:38:22.443+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-23T07:38:22.444+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-23T07:38:22.455+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-23T07:38:22.462+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-23T07:38:23.325+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-23T07:38:23.338+0000] {api.py:22} INFO - print_api Price            Close        High         Low        Open    Volume
+Ticker            TSLA        TSLA        TSLA        TSLA      TSLA
+Date                                                                
+2025-12-31  449.720001  456.549988  449.299988  456.100006  49078000
+[2026-02-23T07:38:23.340+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-23T07:38:23.340+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stocks/scripts/manager.py", line 18, in fetch_data
+    data = data[["ticker", "date", "close", "high", "low", "open", "volume"]]
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/frame.py", line 4384, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6302, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6355, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['date'] not in index"
+[2026-02-23T07:38:23.355+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260223T073822, end_date=20260223T073823
+[2026-02-23T07:38:23.363+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 2094 for task task_TSLA ("['date'] not in index"; 4149)
+[2026-02-23T07:38:23.392+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-23T07:38:23.408+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-23T07:38:23.411+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-23T07:42:36.850+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-23T07:42:36.872+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T07:42:36.880+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T07:42:36.880+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-23T07:42:36.890+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-23T07:42:36.897+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=4255) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-23T07:42:36.898+0000] {standard_task_runner.py:64} INFO - Started process 4257 to run task
+[2026-02-23T07:42:36.897+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '2097', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmp6p7qd2t2']
+[2026-02-23T07:42:36.899+0000] {standard_task_runner.py:91} INFO - Job 2097: Subtask task_TSLA
+[2026-02-23T07:42:36.931+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host 96304e009ded
+[2026-02-23T07:42:36.996+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-23T07:42:36.997+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-23T07:42:37.008+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-23T07:42:37.015+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-23T07:42:37.708+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-23T07:42:37.723+0000] {api.py:22} INFO - print_api Price            Close        High         Low        Open    Volume
+Ticker            TSLA        TSLA        TSLA        TSLA      TSLA
+Date                                                                
+2025-12-31  449.720001  456.549988  449.299988  456.100006  49078000
+[2026-02-23T07:42:37.733+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-23T07:42:37.734+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-23T07:42:37.737+0000] {sql.py:908} INFO - Done loading. Loaded a total of 0 rows into stocks
+[2026-02-23T07:42:37.742+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-23T07:42:37.743+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-23T07:42:37.749+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260223T074236, end_date=20260223T074237
+[2026-02-23T07:42:37.793+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-23T07:42:37.805+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-23T07:42:37.806+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-23T07:45:39.494+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-23T07:45:39.521+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T07:45:39.528+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [queued]>
+[2026-02-23T07:45:39.529+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-23T07:45:39.547+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_TSLA> on 2026-01-01 00:00:00+00:00
+[2026-02-23T07:45:39.556+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=4339) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-23T07:45:39.555+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_moex', 'task_TSLA', 'scheduled__2026-01-01T00:00:00+00:00', '--job-id', '2100', '--raw', '--subdir', 'DAGS_FOLDER/stocks/dag1.py', '--cfg-path', '/tmp/tmp4_5q480g']
+[2026-02-23T07:45:39.557+0000] {standard_task_runner.py:64} INFO - Started process 4341 to run task
+[2026-02-23T07:45:39.558+0000] {standard_task_runner.py:91} INFO - Job 2100: Subtask task_TSLA
+[2026-02-23T07:45:39.598+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_moex.task_TSLA scheduled__2026-01-01T00:00:00+00:00 [running]> on host 96304e009ded
+[2026-02-23T07:45:39.670+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_moex' AIRFLOW_CTX_TASK_ID='task_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2026-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-01T00:00:00+00:00'
+[2026-02-23T07:45:39.672+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-23T07:45:39.684+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks/scripts/api.py:9 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-23T07:45:39.692+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-23T07:45:40.447+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-23T07:45:40.460+0000] {api.py:22} INFO - print_api Price            Close        High         Low        Open    Volume
+Ticker            TSLA        TSLA        TSLA        TSLA      TSLA
+Date                                                                
+2025-12-31  449.720001  456.549988  449.299988  456.100006  49078000
+[2026-02-23T07:45:40.471+0000] {base.py:84} INFO - Using connection ID 'pg_1' for task execution.
+[2026-02-23T07:45:40.472+0000] {sql.py:254} WARNING - This setter is for backward compatibility and should not be used.
+Since the introduction of connection property, the providers listed below breaks due to assigning value to self.connection in their __init__ method.
+* apache-***-providers-mysql<5.7.1
+* apache-***-providers-elasticsearch<5.5.1
+* apache-***-providers-postgres<5.13.0
+[2026-02-23T07:45:40.475+0000] {sql.py:908} INFO - Done loading. Loaded a total of 0 rows into stocks
+[2026-02-23T07:45:40.479+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-23T07:45:40.480+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-23T07:45:40.486+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_moex, task_id=task_TSLA, run_id=scheduled__2026-01-01T00:00:00+00:00, execution_date=20260101T000000, start_date=20260223T074539, end_date=20260223T074540
+[2026-02-23T07:45:40.534+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-23T07:45:40.547+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-23T07:45:40.549+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
