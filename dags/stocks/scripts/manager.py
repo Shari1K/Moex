@@ -5,7 +5,7 @@ from airflow.providers.postgres.hooks.postgres import PostgresHook
 from airflow_clickhouse_plugin.hooks.clickhouse import ClickHouseHook
 
 
-def Extract(stock, **kwargs):
+def data_to_PostgreSQL(stock, **kwargs):
     data_interval_start = kwargs["data_interval_start"].replace(tzinfo=None)
     data_interval_end = kwargs["data_interval_end"].replace(tzinfo=None)
 
@@ -17,20 +17,17 @@ def Extract(stock, **kwargs):
     data["ticker"] = stock
     data = data[["ticker", "date", "close", "high", "low", "open", "volume"]]
     rows = data.values.tolist()
-    # target_fields = data.columns.tolist()
     try:
         postgresHook = PostgresHook(postgres_conn_id="pg_1")
         postgresHook.insert_rows(table="stocks", rows=rows,
                                  target_fields=["ticker", "date", "close", "high", "low", "open", "volume"])
-        # postgresHook.insert_rows(table="stocks", rows=rows,
-        #                          target_fields=target_fields)
     except Exception as e:
         logging.info(rows)
         raise AirflowFailException("Ошибка")
     return data.to_json(f"{stock}_{data_interval_start.strftime('%Y-%m-%d')}.json")
 
 
-def Load(**kwargs):
+def data_to_ClickHouse(**kwargs):
     data_interval_start = kwargs["data_interval_start"]
     execution_date = data_interval_start.strftime('%Y-%m-%d')
     query = f"""
