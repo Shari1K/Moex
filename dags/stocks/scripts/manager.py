@@ -5,7 +5,7 @@ from airflow.providers.postgres.hooks.postgres import PostgresHook
 from airflow_clickhouse_plugin.hooks.clickhouse import ClickHouseHook
 
 
-def Extract(stock, **kwargs):
+def data_to_pg(stock, **kwargs):
     data_interval_start = kwargs["data_interval_start"].replace(tzinfo=None)
     data_interval_end = kwargs["data_interval_end"].replace(tzinfo=None)
 
@@ -30,7 +30,7 @@ def Extract(stock, **kwargs):
     return data.to_json(f"{stock}_{data_interval_start.strftime('%Y-%m-%d')}.json")
 
 
-def Load(**kwargs):
+def data_to_click(**kwargs):
     data_interval_start = kwargs["data_interval_start"]
     execution_date = data_interval_start.strftime('%Y-%m-%d')
     query = f"""
