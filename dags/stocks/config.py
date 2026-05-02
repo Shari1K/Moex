@@ -1,3 +1,2 @@
-
-
-TICKERS = ["AAPL", "TSLA", "GOOG"]
+# TICKERS = ["AAPL", "TSLA", "GOOG"]
+TICKERS = ["TSLA"]

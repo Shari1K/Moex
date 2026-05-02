@@ -1,43 +1,57 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.operators.empty import EmptyOperator
+import json
 from datetime import datetime
-from stocks.scripts.manager import data_to_PostgreSQL, data_to_ClickHouse
+from stocks.scripts.manager import Extract, Load
 from stocks.config import TICKERS
 
+# BASE_DIR = os.path.dirname(__file__)
+# CFG_PATH = os.path.join(BASE_DIR, "cfg.yaml")
+#
+#
+# with open(CFG_PATH) as f:
+#     config = yaml.safe_load(f)
+#
+# stocks = config["data"]["stock"]
 
 default_args = {
     "owner": "airflow",
+    # "depends_on_past": True,
+    # "start_date": datetime(2026, 1, 1),
+    # "end_date": datetime(2026, 1, 7),
+    # "schedule": "@daily"
 }
-
 
 with DAG(
         dag_id="dag_moex",
         default_args=default_args,
         max_active_runs=1,
-        start_date=datetime(2026, 1, 1),
-        end_date=datetime(2026, 4, 28),
+        # start_date=datetime(2025, 12, 1),
+        # end_date=datetime(2025, 12, 3),
+        start_date=datetime(2026, 2, 4),
+        end_date=datetime(2026, 2, 27),
         schedule="0 0 * * 1-5",
         catchup=True
 ) as dag:
     start = EmptyOperator(
         task_id=f"task_start")
 
-    load_to_pg = []
+    extract = []
     for stock in TICKERS:
         unload = PythonOperator(
             task_id=f"task_{stock}",
-            python_callable=data_to_PostgreSQL,
+            python_callable=Extract,
             op_kwargs={"stock": stock}
         )
-        load_to_pg.append(unload)
+        extract.append(unload)
 
-    load_to_click = PythonOperator(
+    load = PythonOperator(
         task_id=f"task_load_to_click",
-        python_callable=data_to_ClickHouse,
+        python_callable=Load,
     )
 
     end = EmptyOperator(
         task_id=f"task_end")
 
-    start >> load_to_pg >> load_to_click >>end
+    start >> extract >> load >>end
